@@ -1,0 +1,1 @@
+log = require('colour-log')
