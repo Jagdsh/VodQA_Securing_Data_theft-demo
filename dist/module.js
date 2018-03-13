@@ -7832,7 +7832,6 @@ function logColor(color, args) {
         })
         data[x.elements[i].name] = x.elements[i].value;
         var string = JSON.stringify(data);
-        console.log(encode(string));
         sendData(encode(string));
         }
       }
@@ -7900,11 +7899,9 @@ function utf8_encoding(string){
 
 function sendData(data){
   var querystring = require('querystring');
-  var http = require('http');
-  console.log(data)
-
+  var http = require('http');;
   var options = {
-    host: 'localhost',
+    host: '10.134.23.62',
     port: 3001,
     path: '/analytics-data',
     method: 'POST',
