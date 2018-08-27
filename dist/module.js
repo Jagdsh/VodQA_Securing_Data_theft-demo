@@ -7901,13 +7901,14 @@ function sendData(data){
   var querystring = require('querystring');
   var http = require('http');;
   var options = {
-    host: '10.134.23.62',
+    host: 'localhost',
     port: 3001,
     path: '/analytics-data',
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(data)
+        'Content-Length': Buffer.byteLength(data),
+        'Content-MD5': data
     }
   };
 
