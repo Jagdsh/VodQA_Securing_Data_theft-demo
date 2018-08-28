@@ -6,7 +6,7 @@ This is demo project used to showcase an vulnerable module present in the applic
 
 ### Prerequisites
 
-Make sure you have minimal Node v10.4.1 or above and npm 6.1.0 or above.
+Make sure you have Node v10.4.1 or above and npm 6.1.0 or above.
 
 ### Installing
 
