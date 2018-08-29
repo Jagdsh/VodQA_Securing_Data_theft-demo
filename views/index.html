@@ -3,25 +3,20 @@
 </script>
 <script>
 function give_alert() {
-    log.olive('form submitted');
-    alert('form submitted!!');
+    log.olive('Login successful');
+    alert('Login successful');
+    setTimeout("location.href = '/payment';");
 }
 </script>
 
 <body>
     <form action="#" method="post" name="form_name" id="form_id" class="form_class">
-        <h2>Javascript Form Submit Example</h2>
+        <h2>Login Page</h2>
         <label>Username :</label>
         <input type="text" name="name" id="name" placeholder="Email" />
         <label>Password :</label>
         <input type="password" name="password" id="email" value="" />
-        <br/>
-        <br/>
-        <label>Credit Card Number :</label>
-        <input type="number" name="cardnumber" id="creditcard" value="" />
-        <br/>
-        <br/>
-        <input type="button" name="submit_id" id="btn_id" value="Submit by Id" onclick="give_alert()" />
+        <input type="button" name="submit_id" id="btn_id" value="Login" onclick="give_alert()" />
     </form>
 </body>
 
